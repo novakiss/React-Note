@@ -1,20 +1,21 @@
 import React from 'react';
 
 import App from './app/App';
-import Note from './app/components/Note';
 import CheckNumber from './app/components/CheckZahl'
+import ES6 from './app/components/ecmascript 6/ES6';
+import Variablen from './app/components/ecmascript 6/variablen';
 
 import {
     Route,
     Switch as RouterSwitch
 } from 'react-router-dom';
 
-
 const AppRouter = () => (
     <RouterSwitch>
         <Route path="/" exact component ={App}/>
         <Route path ="/checkNumber" exact component = {CheckNumber}/>
-        <Route path ="/note" exact component = {Note}/>
+        <Route path ="/ES6" exact component = {ES6}/>
+        <Route path ="/ES6/variablen" exact component = {Variablen}/>
     </RouterSwitch>
 );
 

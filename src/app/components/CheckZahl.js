@@ -25,7 +25,7 @@ class CheckZahl extends Component {
     render() {
         const output = this.state.output;
         return (
-            <div className="App-intro">
+            <div className="App">
                 <h1>Check Number</h1>
                 <form>
                     <input type="text" value={this.state.text} onChange={this.handleChange}/>

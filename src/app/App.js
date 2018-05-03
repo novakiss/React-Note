@@ -13,7 +13,7 @@ class App extends Component {
                 </header>
                 <p className="App-intro">
                     <li>Projekt <a href="/checkNumber">Check Number</a></li>
-                    <li>Projekt <a href="/note">Note</a></li>
+                    <li>Projekt <a href="/ES6">ES6</a></li>
                 </p>
             </div>
         );
