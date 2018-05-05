@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import logo from '../logo.svg';
 import '../App.css';
+import {Link} from 'react-router-dom';
 
 
 class App extends Component {
@@ -11,9 +12,10 @@ class App extends Component {
                     <img src={logo} className="App-logo" alt="logo"/>
                     <h1 className="App-title">Welcome to Projekts of Novakiss</h1>
                 </header>
+
                 <p className="App-intro">
-                    <li>Projekt <a href="/checkNumber">Check Number</a></li>
-                    <li>Projekt <a href="/ES6">ES6</a></li>
+                    <li>Projekt <Link to="/checkNumber">Check Number</Link></li>
+                    <li>Projekt <Link to="/ES6">ES6</Link></li>
                 </p>
             </div>
         );

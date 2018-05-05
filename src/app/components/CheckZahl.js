@@ -30,7 +30,7 @@ class CheckZahl extends Component {
                 <form>
                     <input type="text" value={this.state.text} onChange={this.handleChange}/>
                     <button type="submit" onClick={this.handleSubmit}>OK</button>
-                    <div>{output} </div>
+                    {output?<div>{output} </div>: <div>bitte geben eine Zahl</div>}
                 </form>
                 <div>Du kannst <a href="/">hier</a> vorige Seite zurückgehen</div>
             </div>

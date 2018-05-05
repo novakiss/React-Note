@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import withStyle from 'react-jss';
 import Header from '../Header';
 import Footer from '../Footer';
-import Code from '../Code';
 import Theorie from '../Theorie';
 
 const style = {
@@ -42,15 +41,18 @@ class Variablen extends Component {
                             <div>Nó là biến có phạm vi xuyên suốt một function</div>
                             <div>Ví dụ:</div>
 
-                            <Code text="function(){"/>
 
-                            <Code text="    var a=10;"/>
-                            <Code text="    if(true) {"/>
-                            <Code text="        a=20;"/>
-                            <Code text="        console.log(a)//20}"/>
-                            <Code text="}"/>
-                            <Code text="console.log(a)//20"/>
+                            <pre>
+                                {`function(){
+    var a=10;
+    if(true) {
+        a=20;
+        console.log(a)//20}
+    }
+console.log(a)//20`}
+                            </pre>
                         </div>
+
                         <div className={giua}>
                             <Theorie text="Khai báo bằng Const"/>
                             <div>Khai báo một hằng số và không thay đổi</div>
@@ -58,15 +60,18 @@ class Variablen extends Component {
                         <div className={phai}>
                             <Theorie text="Khai báo bằng let"/>
                             Chỉ truy cập trong block (block-gebundene Variable definieren)
-                            <Code text="function(){"/>
 
-                            <Code text="    let a=10;"/>
-                            <Code text="    if(true) {"/>
-                            <Code text="        a=20;"/>
-                            <Code text="        console.log(a)//20}"/>
-                            <Code text="}"/>
-                            <Code text="console.log(a)//10"/>
+                            <pre>
+                                {`function(){
+    let a=10;
+    if(true) {
+        a=20;
+        console.log(a)//20}
+    }
+console.log(a)//10`}
+                            </pre>
                         </div>
+
                     </div>
                 </div>
 

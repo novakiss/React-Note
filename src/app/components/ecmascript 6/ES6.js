@@ -1,9 +1,11 @@
 import React,{Component} from 'react';
+import {Link} from'react-router-dom';
 
 class ES6 extends Component{
     render(){
         return (<p>
-            <li><a href="/ES6/variablen">Variablen</a></li>
+            <li><Link to="/ES6/variablen">Variablen</Link></li>
+            <li><Link to="/ES6/class">Klasse</Link></li>
         </p>)
     }
 }
