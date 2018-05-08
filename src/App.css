@@ -22,6 +22,17 @@
   font-size: large;
 }
 
+.App-button {
+  height: 200px;
+  width: 300px;
+  font-size: xx-large;
+}
+
+.App-picture{
+  width: 500px;
+  height: 300px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 
 class InputTag extends Component{
     show =() =>{
-        alert(this.refs.sl.value);
+        alert(this.refs.sl.value +'  ' + this.refs.txt.value);
     };
     render(){
         return(

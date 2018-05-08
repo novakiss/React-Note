@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import withStyle from 'react-jss';
 import Header from '../Header';
 import Footer from '../Footer';
-import Theorie from '../Theorie';
+import Theorie from './Theorie';
 
 const style = {
     app: {
