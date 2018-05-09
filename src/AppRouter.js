@@ -12,6 +12,7 @@ import Aufgabe2 from './app/components/KhoaPham/DoiHinhButton';
 import Aufgabe3 from './app/components/KhoaPham/DoiHinhTuDong';
 import Aufgabe4 from './app/components/KhoaPham/List';
 import Aufgabe5 from './app/components/KhoaPham/Objekt';
+import Note from './app/components/Note/List';
 
 import {
     Route,
@@ -32,6 +33,7 @@ const AppRouter = () => (
         <Route path ="/KhoaPham/aufgabe3" exact component = {Aufgabe3}/>
         <Route path ="/KhoaPham/aufgabe4" exact component = {Aufgabe4}/>
         <Route path ="/KhoaPham/aufgabe5" exact component = {Aufgabe5}/>
+        <Route path ="/note" exact component = {Note}/>
     </RouterSwitch>
 );
 
