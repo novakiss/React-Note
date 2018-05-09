@@ -20,7 +20,15 @@ export default class KhoaPhamLinks extends Component{
                 <li>
                     <Link to="/KhoaPham/aufgabe2">Đổi Hình</Link>
                 </li>
-
+                <li>
+                    <Link to="/KhoaPham/aufgabe3">Đổi Hình tự động</Link>
+                </li>
+                <li>
+                    <Link to="/KhoaPham/aufgabe4">Render HTML từ mảng String</Link>
+                </li>
+                <li>
+                    <Link to="/KhoaPham/aufgabe5">Render HTML từ Object</Link>
+                </li>
             </div>
             <Footer/>
         </div>);
