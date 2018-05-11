@@ -16,14 +16,14 @@ export default class List extends Component {
     };
 
     render() {
-        //<div id="update"/>
+        console.log(this.state.mang[1]);
         list = this;
         return (<div className="App">
                 <Header text="Note Projekt"/>
                 <div className="div-list">
                     <button onClick={this.add}>Add</button>
+                    <div id="list"/>
                     {this.state.mang.map((e, index) => <div key={index}>
-
                         <Note id={index}>{e}</Note></div>)}
                 </div>
                 <Footer/>
