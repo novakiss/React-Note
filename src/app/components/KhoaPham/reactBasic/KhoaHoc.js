@@ -1,8 +1,8 @@
 import {Component} from 'react';
 
-class KhoaHoc extends Component{
+class KhoaHoc extends Component {
     render() {
-        const {khoahoc}= this.props;
+        const {khoahoc} = this.props;
         return khoahoc;
     }
 }

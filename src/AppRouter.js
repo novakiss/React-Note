@@ -6,12 +6,12 @@ import ES6 from './app/components/ecmascript 6/ES6';
 import Variablen from './app/components/ecmascript 6/variablen';
 import Klasse from './app/components/ecmascript 6/Klasse';
 import KhoaPhamLinks from './app/components/KhoaPham/KhoaPhamLinks';
-import Grundlagen from './app/components/KhoaPham/Grundlagen';
-import Aufgabe1 from './app/components/KhoaPham/KlickButton';
-import Aufgabe2 from './app/components/KhoaPham/DoiHinhButton';
-import Aufgabe3 from './app/components/KhoaPham/DoiHinhTuDong';
-import Aufgabe4 from './app/components/KhoaPham/List';
-import Aufgabe5 from './app/components/KhoaPham/Objekt';
+import Grundlagen from './app/components/KhoaPham/reactBasic/Grundlagen';
+import Aufgabe1 from './app/components/KhoaPham/clickButton/KlickButton';
+import Aufgabe2 from './app/components/KhoaPham/clickChangePicture/KlickchangePictures';
+import Aufgabe3 from './app/components/KhoaPham/autoChangePictures/AutoChangePicture';
+import Aufgabe4 from './app/components/KhoaPham/renderHTMLFromArrayString/List';
+import Aufgabe5 from './app/components/KhoaPham/renderHTMLFromObject/Objekt';
 import Note from './app/components/Note/List';
 
 import {

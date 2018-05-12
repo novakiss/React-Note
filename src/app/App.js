@@ -15,7 +15,7 @@ class App extends Component {
 
                 <p className="App-intro">
                     <li>Projekt <Link to="/checkNumber">Check Number</Link></li>
-                    <li>Projekt <Link to="/ES6">ES6</Link></li>
+                    <li>Projekt <Link to="/ES6">Grundlagen ES6</Link></li>
                     <li>Projekt <Link to="/KhoaPham">Khoa Pham Projekt</Link></li>
                     <li>Projekt <Link to="/note">Note</Link></li>
                 </p>

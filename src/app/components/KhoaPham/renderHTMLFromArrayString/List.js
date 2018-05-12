@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import RenderHTML from './RenderHTMLFromArrayString'
 
-import Header from '../Header';
-import Footer from '../Footer';
+import Header from '../../Header';
+import Footer from '../../Footer';
 
 export default class List extends Component {
     state = {

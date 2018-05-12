@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import ObjectCalled from './ObjektCalled';
-import picture1 from '../../../pictures/1.jpg';
-import picture2 from '../../../pictures/2.jpg';
-import picture3 from '../../../pictures/3.jpg';
-import picture4 from '../../../pictures/4.jpg';
-import picture5 from '../../../pictures/5.jpg';
-import picture6 from '../../../pictures/6.jpg';
-import picture7 from '../../../pictures/7.png';
+import picture1 from '../../../../pictures/1.jpg';
+import picture2 from '../../../../pictures/2.jpg';
+import picture3 from '../../../../pictures/3.jpg';
+import picture4 from '../../../../pictures/4.jpg';
+import picture5 from '../../../../pictures/5.jpg';
+import picture6 from '../../../../pictures/6.jpg';
+import picture7 from '../../../../pictures/7.png';
 
-import Header from '../Header';
-import Footer from '../Footer';
+import Header from '../../Header';
+import Footer from '../../Footer';
 
 const pictures = [picture1, picture2, picture3, picture4, picture5, picture6, picture7];
 
@@ -31,7 +31,7 @@ export default class Objekt extends Component {
 
     render() {
         return (<div className="App">
-            <Header text="Render HTML từ mảng đối tượng"/>
+            <Header text="Render HTML from Object"/>
             <button onClick={this.add}>Add Picture</button>
             {this.state.mang.map((e, index) => (
                 <ObjectCalled key={index} src={e.srcPicture}>{e.inhalt}</ObjectCalled>))}

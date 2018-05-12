@@ -3,6 +3,7 @@ import withStyle from 'react-jss';
 
 const style ={
     head: {
+        marginTop: '0px',
         background: '#222',
         height: 'auto',
         color: '#ffffff',

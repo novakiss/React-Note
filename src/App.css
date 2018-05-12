@@ -34,7 +34,8 @@
 }
 
 .div-note{
-  width: 150px;
+  width: 280px;
+  height: 100px;
   padding: 5px;
   margin: 3px;
   border: solid 3px green;
@@ -42,10 +43,23 @@
 }
 
 .div-list{
-  width: 180px;
+  width: 300px;
   padding: 5px;
   border: solid 1px blue;
   border-radius: 5px;
+  margin: 0 auto;
+}
+
+.App-left{
+  float: left;
+}
+
+.App-right{
+  float: right;
+}
+
+.App-content{
+  width: 60%;
   margin: 0 auto;
 }
 

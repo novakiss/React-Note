@@ -5,7 +5,7 @@ import InputTag from './InputTag';
 class KhoaPham extends Component {
     state = {
         text: null,
-        tongHocVien: this.props.tongHocVien
+        count: this.props.count
     };
 
     getChildren = (a) => alert(a);
@@ -15,25 +15,25 @@ class KhoaPham extends Component {
     };
 
     dangKyHoc = () => {
-        this.setState({tongHocVien: parseInt(this.state.tongHocVien, 10) + 1});
+        this.setState({count: parseInt(this.state.count, 10) + 1});
     };
 
     render() {
         return (
-            <div>
+            <div className={this.props.className}>
                 <InputTag/>
                 {this.props.ten} - <KhoaHoc khoahoc={this.props.khoahoc}/>
-                <p>Tong So Hoc Vien: {this.state.tongHocVien}</p>
+                <p>Count of Students : {this.state.count}</p>
 
                 <button onClick={() => {
                     this.getChildren(this.props.children)
-                }}>Thong tin Children
+                }}>Place of Learning
                 </button>
                 <button onClick={() => {
                     this.hienThiChildren(this.props.children)
-                }}>Hien thi Children
+                }}>Push Children
                 </button>
-                <button onClick={this.dangKyHoc}>Dang Ky hoc</button>
+                <button onClick={this.dangKyHoc}>Plus Student</button>
                 {this.state.text === null ? null : <div>{this.state.text}</div>}
             </div>);
     }

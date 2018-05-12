@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import '../../App.css';
+import Header from './Header';
+import Footer from './Footer';
 
 class CheckZahl extends Component {
     state = {
@@ -26,13 +28,14 @@ class CheckZahl extends Component {
         const output = this.state.output;
         return (
             <div className="App">
-                <h1>Check Number</h1>
+                <Header text="Check Number"/>
                 <form>
                     <input type="text" value={this.state.text} onChange={this.handleChange}/>
                     <button type="submit" onClick={this.handleSubmit}>OK</button>
                     {output?<div>{output} </div>: <div>bitte geben eine Zahl</div>}
                 </form>
                 <div>Du kannst <a href="/">hier</a> vorige Seite zurückgehen</div>
+                <Footer/>
             </div>
         )
     }
